@@ -1,0 +1,249 @@
+/**
+* Init
+**/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Raleway";
+}
+
+nav {
+    align-self: center;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Roboto Slab";
+    font-size: 1.6em;
+    font-weight: 500;
+    align-self: center;
+}
+
+h2 {
+    padding-bottom: 45px;
+    font-weight: 300;
+}
+
+.subtitle {
+    display: block;
+    font-family: "Raleway";
+    font-size: 0.45em;
+    text-transform: uppercase;
+}
+
+ul {
+    display: grid;
+    list-style: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+img {
+    max-width: 400px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.vertical-center {
+    align-self: center;
+}
+
+.padding-interne {
+    padding: 0px 4%;
+}
+
+.phrase-accroche {
+    font-size: 1.5em;
+}
+
+.margin-top {
+    margin-top: 45px;
+}
+
+.decoration {
+    border-left: 5px solid #ff2859;
+    padding-left: 30px;
+    margin-bottom: 45px;
+}
+
+
+/**
+* Grille principale
+**/
+
+.grid {
+    display: grid;
+}
+
+body.grid {
+    grid-template-columns: 150px 1fr 1fr 150px;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: " . header header ." " . accroche accroche ." " . portfolio portfolio ." " . presentation presentation ." " . contact contact ." " . footer footer .";
+    grid-gap: 70px 0px;
+    padding-bottom: 45px;
+    padding-top: 45px;
+}
+
+#menu {
+    grid-area: header;
+}
+
+#portfolio {
+    grid-area: portfolio;
+}
+
+#presentation {
+    grid-area: presentation;
+}
+
+#contact {
+    grid-area: contact;
+}
+
+footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/**
+* Grille du menu
+**/
+
+#menu {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-family: "Roboto Slab";
+}
+
+#logo {
+    display: grid;
+    grid-template-columns: 54px 1fr;
+}
+
+#logo a {
+    align-self: self-end;
+    margin-top: 10px;
+}
+
+#menu img {
+    width: 40px;
+}
+
+#menu ul li {
+    text-transform: uppercase;
+}
+
+
+/**
+* Grille de l'accroche
+**/
+
+#accroche {
+    grid-area: accroche;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    background-image: url(../img/slider/norvege.jpg);
+    background-size: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-position: 2% 19%;
+    border-radius: 4px;
+    box-shadow: 1px 2px 1px #0000004a;
+}
+
+#accroche p {
+    background-color: #ffffffa8;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 1px 3px 3px #0000004a;
+}
+
+
+/**
+* Grille du Portfolio
+**/
+
+
+/*label*/
+
+#portfolio span {
+    padding: 4px;
+    background-color: #ff2859;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px #00000080;
+    margin-right: 2%;
+    font-weight: 600;
+    color: white;
+    font-family: "Roboto slab";
+    font-size: 0.8em;
+}
+
+#portfolio img {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+#portfolio img,
+#presentation .grid img {
+    box-shadow: 1px 4px 6px #0000004d;
+    border-radius: 9px;
+}
+
+#portfolio li {
+    padding: 0px 2%;
+}
+
+
+/**
+* Grille de la présentation
+**/
+
+#photos img {
+    width: calc(100% / 8);
+}
+
+#presentation .grid {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+#presentation .paragraphe {
+    align-self: center;
+}
+
+
+/**
+* Grille du contact
+**/
+
+#contact {
+    margin: auto;
+}
+
+input,
+textarea {
+    padding: 15px 15px;
+    margin: 8px 0;
+    border: 1px solid #0000001a;
+    border-radius: 4px;
+}
+
+
+/**
+* Grille du footer
+**/
+
+#reseaux {
+    justify-self: self-end;
+}
